@@ -1,0 +1,19 @@
+.btn {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 87px;
+    background-color: var(--btnColor);
+    text-align: center;
+    color: var(--textColor);
+    font-size: 18px;
+    transition: background-color var(--time) var(--duration);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accentColor);
+    }
+}

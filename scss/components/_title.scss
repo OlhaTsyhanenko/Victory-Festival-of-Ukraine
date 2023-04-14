@@ -1,0 +1,11 @@
+.title {
+    font-size: 50px;
+    line-height: 0.94;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--textColor);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 60px;
+    }
+}

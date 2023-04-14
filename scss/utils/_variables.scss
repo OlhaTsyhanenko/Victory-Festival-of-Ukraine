@@ -1,0 +1,29 @@
+:root {
+
+    // Colors
+    --bgColor: #FFFFFF;
+    --sectionBgColor: #F1FDFF;
+    --sectionSecondBgColor: #F2FEFF;
+    --contactBgColor: #F9FADF;
+    --textColor: #000000;
+    --secondTextColor: #3D8C9D;
+    --descriptionColor: #73A6B1;;
+    --accentColor: #9AD2DE;
+    --btnColor: #7AE5FD;
+
+    // Fonts
+    // font-family: 'Montserrat', sans-serif;
+
+    --time: 250ms;
+    --duration: cubic-bezier(0.4, 0, 0.2, 1);
+
+    //screen
+    --mobile: 390px;
+    --tablet: 768px;
+    --desktop: 1440px;
+}
+
+//screen
+$mobile: 390px;
+$tablet: 768px;
+$desktop: 1440px;
