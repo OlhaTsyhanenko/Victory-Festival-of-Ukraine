@@ -80,6 +80,7 @@ body {
 
 .title {
   font-size: 50px;
+  font-weight: 400;
   line-height: 0.94;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -88,18 +89,199 @@ body {
 @media screen and (min-width: 1440px) {
   .title {
     font-size: 60px;
+    text-align: center;
   }
 }
 
-.title {
-  font-size: 50px;
-  line-height: 0.94;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+.btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 87px;
+  background-color: var(--btnColor);
+  text-align: center;
   color: var(--textColor);
+  font-size: 18px;
+  transition: background-color var(--time) var(--duration);
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background-color: var(--accentColor);
+}
+
+.program__btn {
+  padding: 21px 35px;
+  margin: 0 auto;
+}
+
+.section__program {
+  margin-bottom: 37px;
+}
+
+.program__label {
+  font-size: 20px;
+  line-height: 0.969;
+  margin-top: 17px;
+  margin-bottom: 27px;
 }
 @media screen and (min-width: 1440px) {
-  .title {
-    font-size: 60px;
+  .program__label {
+    font-size: 27px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.program__description {
+  color: var(--descriptionColor);
+  margin-bottom: 57px;
+}
+@media screen and (min-width: 1440px) {
+  .program__description {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+}
+
+.program__list {
+  margin-bottom: 60px;
+}
+
+.program__item {
+  background-color: var(--sectionBgColor);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .program__item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 70px 40px;
+  }
+}
+.program__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.program__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .program__img {
+    width: 585px;
+    height: 424px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .program__wrapper {
+    padding: 45px 15px 70px 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .program__wrapper {
+    width: 555px;
+  }
+}
+.program__wrapper div:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 0.949;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .program__title {
+    font-size: 46px;
+  }
+}
+
+.item__description {
+  font-size: 20px;
+  line-height: 0.969;
+  margin-bottom: 45px;
+}
+
+.item__event {
+  font-size: 16px;
+  line-height: 0.969;
+  margin-bottom: 10px;
+}
+
+.item__time {
+  font-size: 16px;
+  line-height: 0.969;
+  color: var(--secondTextColor);
+}
+
+.section__present {
+  position: relative;
+  margin: 0 auto;
+  padding: 128px 20px 20px 20px;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1440px) {
+  .section__present {
+    max-width: 1440px;
+    padding: 280px 78px 180px 77px;
+    background-image: url(/images/present/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 78px;
+  }
+}
+
+.present__wrapper {
+  background-color: var(--sectionSecondBgColor);
+  border-radius: 10px;
+}
+@media screen and (max-width: 1439px) {
+  .present__wrapper {
+    padding: 283px 15px 40px 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .present__wrapper {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+}
+
+.present__description {
+  font-size: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .present__description {
+    padding: 88px 808px 88px 40px;
+    font-size: 28px;
+  }
+}
+
+.present__img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+@media screen and (max-width: 1439px) {
+  .present__img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .present__img {
+    width: 430px;
+    top: 200px;
+    right: 160px;
   }
 }/*# sourceMappingURL=main.css.map */

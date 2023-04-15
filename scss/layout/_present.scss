@@ -1,0 +1,51 @@
+.section__present {
+    position: relative;
+    margin: 0 auto;
+    padding: 128px 20px 20px 20px;
+    margin-bottom: 100px;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1440px;
+        padding: 280px 78px 180px 77px;
+        background-image: url(/images/present/bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 78px;
+    }
+}
+
+.present__wrapper {
+    background-color: var(--sectionSecondBgColor);
+    border-radius: 10px;
+    @media screen and (max-width: 1439px) {
+        padding: 283px 15px 40px 15px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+}
+
+.present__description {
+    font-size: 20px;
+
+    @media screen and (min-width: $desktop) {
+        padding: 88px 808px 88px 40px;
+        font-size: 28px;
+    }
+}
+
+.present__img {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    @media screen and (max-width: 1439px) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media screen and (min-width: $desktop) {
+        width: 430px;
+        top: 200px;
+        right: 160px;
+    }
+}
