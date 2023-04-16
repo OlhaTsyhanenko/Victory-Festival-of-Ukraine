@@ -44,6 +44,10 @@
     }
 }
 
+.program__pic {
+    flex-shrink: 0;
+}
+
 .program__img {
     width: 100%;
     object-fit: cover;
@@ -57,11 +61,6 @@
 .program__wrapper {
     @media screen and (max-width: 1439px) {
         padding: 45px 15px 70px 15px;
-    }
-
-
-    @media screen and (min-width: $desktop) {
-        width: 555px;
     }
 
     div:not(:last-child) {

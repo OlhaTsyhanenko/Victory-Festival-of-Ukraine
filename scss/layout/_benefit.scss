@@ -1,0 +1,59 @@
+.section__benefit {
+    margin-bottom: 70px;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 65px;
+    }
+}
+
+.benefit__description {
+    color: var(--descriptionColor);
+    margin-top: 17px;
+    margin-bottom: 82px;
+
+    @media screen and (min-width: $desktop) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 77px;
+    }
+}
+
+.benefit__text {
+    font-size: 20px;
+    line-height: 0.969;
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: $desktop) {
+        font-size: 27px;
+        margin-bottom: 23px;
+    }
+}
+
+.benefit__quantity {
+    font-size: 60px;
+    line-height: 0.949;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 60px;
+        margin-bottom: 67px;
+    }
+
+    span:not(:last-child) {
+        display: flex;
+        &::after {
+            display: block;
+            content: '';
+            width: 2px;
+            height: 62px;
+            background-color: var(--accentColor);
+            margin-right: 13px;
+            margin-left: 13px;
+        }
+    }
+
+}
+
