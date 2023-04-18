@@ -18,8 +18,41 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
+    <header class="section section__header" id="header">
+      <div class="header__nav">
+        <svg width="65px" height="65px" class="logo__svg">
+          <use href="./images/symbol-defs.svg#icon-logo"></use>
+        </svg>
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <a href="#contacts" class="link nav__link">Контакти</a>
+          </li>
+          <li class="nav__item">
+            <a href="#header" class="link nav__link">Головна</a>
+          </li>
+          <li class="nav__item">
+            <a href="#program" class="link nav__link">Програма</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefits" class="link nav__link">Як потрапити</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__hero">
+        <h1 class="hero__title">
+          Фестиваль <br />
+          Перемоги <br />України
+        </h1>
+        <p class="hero__description">
+          Свято для усіх українців, які працювали, <br />
+          боролися й вірили у перемогу
+        </p>
+      </div>
+      <div class="header__line"></div>
+    </header>
     <main>
-      <section class="section section__program">
+      <section class="section section__program" id="program">
         <h2 class="title">Програма фестивалю</h2>
         <p class="program__label">
           3 сцени, щоб добре й із задоволенням провести час
@@ -179,6 +212,7 @@
         </ul>
         <button class="btn program__btn">Дізнатися більше</button>
       </section>
+
       <section class="section__present">
         <div class="present__wrapper">
           <p class="present__description">
@@ -209,7 +243,8 @@
           />
         </picture>
       </section>
-      <section class="section section__benefit">
+
+      <section class="section section__benefit" id="benefits">
         <h2 class="title">Як потрапити</h2>
         <p class="benefit__description">
           Фестиваль безкоштовний. Будемо збирати пожертви для відбудови
@@ -222,6 +257,95 @@
           <span>025</span>
         </p>
         <button class="btn benefit__btn">Зробити пожертву</button>
+      </section>
+
+      <section class="section__contacts" id="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="title">Контакти</h2>
+          <div>
+            <svg width="33px" height="33px">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <p class="contacts__description">
+              Якщо у вас виникають питання – телефонуйте за номером
+            </p>
+            <a href="tel:+380987654321" class="link contacts__link"
+              ><span>0-987-654-321</span>
+            </a>
+            <ul class="list socnet__list">
+              <li class="socnet__item">
+                <a href="" class="link socnet__link">
+                  <svg width="33px" height="33px">
+                    <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socnet__item">
+                <a href="" class="link socnet__link">
+                  <svg width="33px" height="33px">
+                    <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="contacts__description">Або пишіть нам у чат-бот</p>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <picture class="form__pic">
+            <source
+              srcset="
+                ./images/contacts/pic1_desktop.png    1x,
+                ./images/contacts/pic1@2x_desktop.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/contacts/pic1_mobile.png    1x,
+                ./images/contacts/pic1@2x_mobile.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="contacts__img"
+              src="./contacts/present/pic1_desktop.png"
+              alt="pic"
+            />
+          </picture>
+          <div class="form__inner">
+            <p class="form__description">
+              Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку
+            </p>
+            <form class="contacts__form">
+              <div class="form__field">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label for="name" class="form__label">Ім’я</label>
+              </div>
+              <div class="form__field">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label for="email" class="form__label">Емейл</label>
+              </div>
+              <button type="submit" class="btn btn__form">Підписатися</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
   </body>

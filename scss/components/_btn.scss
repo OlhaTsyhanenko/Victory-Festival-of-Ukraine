@@ -8,6 +8,7 @@
     text-align: center;
     color: var(--textColor);
     font-size: 18px;
+    text-transform: uppercase;
     transition: background-color var(--time) var(--duration);
 
     cursor: pointer;
@@ -22,4 +23,10 @@
 .benefit__btn {
     padding: 21px 35px;
     margin: 0 auto;
+}
+
+.btn__form {
+    width: 100%;
+    max-width: 506px;
+    padding: 22px 36px;
 }
