@@ -172,7 +172,7 @@ body {
   margin-bottom: 100px;
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-image: url(../../images/header/bg_mobile.png), url(../../images/header/line_mobile.png);
+  background-image: url(../images/header/bg_mobile.png), url(../images/header/line_mobile.png);
 }
 @media screen and (max-width: 1439px) {
   .section__header {
@@ -181,7 +181,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section__header {
-    background-image: url(../../images/header/bg@2x_mobile.png), url(../../images/header/line@2x_mobile.png);
+    background-image: url(../images/header/bg@2x_mobile.png), url(../images/header/line@2x_mobile.png);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -190,12 +190,12 @@ body {
     margin-bottom: 143px;
     padding-bottom: 220px;
     background-position: bottom 67px right 0, bottom 0 right 0, top left;
-    background-image: url(../../images/header/bg_desktop.png), url(../../images/header/line_desktop.png), url(../../images/header/color.png);
+    background-image: url(../images/header/bg_desktop.png), url(../images/header/line_desktop.png), url(../images/header/color.png);
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section__header {
-    background-image: url(../../images/header/bg@2x_desktop.png), url(../../images/header/line@2x_desktop.png), url(../../images/header/color@2x.png);
+    background-image: url(../images/header/bg@2x_desktop.png), url(../images/header/line@2x_desktop.png), url(../images/header/color@2x.png);
   }
 }
 
@@ -414,7 +414,7 @@ body {
   .section__present {
     max-width: 1440px;
     padding: 280px 78px 180px 77px;
-    background-image: url(../../images/present/bg.png);
+    background-image: url(../images/present/bg.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 78px;
@@ -536,7 +536,7 @@ body {
 @media screen and (min-width: 1440px) {
   .section__contacts {
     padding: 0 100px 116px 100px;
-    background-image: url(../../images/contacts/bg.png);
+    background-image: url(../images/contacts/bg.png);
     background-repeat: no-repeat;
     background-position-y: -81px;
     max-width: 1440px;
