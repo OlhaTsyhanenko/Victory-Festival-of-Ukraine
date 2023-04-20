@@ -6,11 +6,11 @@
     margin-bottom: 100px;
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-image: url(images/header/bg_mobile.png), url(images/header/line_mobile.png);
+    background-image: url(../../images/header/bg_mobile.png), url(../../images/header/line_mobile.png);
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(images/header/bg@2x_mobile.png), url(images/header/line@2x_mobile.png);
+            background-image: url(../../images/header/bg@2x_mobile.png), url(../../images/header/line@2x_mobile.png);
         }
 
     @media screen and (min-width: $desktop) {
@@ -18,11 +18,11 @@
         margin-bottom: 143px;
         padding-bottom: 220px;
         background-position: bottom 67px right 0, bottom 0 right 0, top left;
-        background-image: url(images/header/bg_desktop.png), url(images/header/line_desktop.png), url(images/header/color.png) ;
+        background-image: url(../../images/header/bg_desktop.png), url(../../images/header/line_desktop.png), url(../../images/header/color.png) ;
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(images/header/bg@2x_desktop.png), url(images/header/line@2x_desktop.png), url(images/header/color@2x.png);
+                background-image: url(../../images/header/bg@2x_desktop.png), url(../../images/header/line@2x_desktop.png), url(../../images/header/color@2x.png);
             }
     }
 }
