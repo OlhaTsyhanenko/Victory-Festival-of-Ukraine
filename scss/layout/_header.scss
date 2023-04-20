@@ -28,10 +28,27 @@
 }
 
 .header__nav {
-    padding-top: 63px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @media screen and (max-width: 1439px) {
+        position: absolute;
+        top: 46px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background-color: var(--sectionBgColor);
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        &.active {
+                transform: translateX(0);
+            }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .logo__svg {
@@ -41,36 +58,50 @@
 }
 
 .nav__list {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 1439px) {
+        margin-top: 30px;
+    }
+
     @media screen and (min-width: $desktop) {
-        display: flex;
+        flex-direction: row;
     }
 }
 
+.nav__item:last-child {
+    padding: 21px 28px;
+    border-radius: 87px;
+    background-color: var(--btnColor);
+    text-transform: uppercase;
+}
+
 .nav__item:not(:last-child) {
-    margin-right: 56px;
+    @media screen and (max-width: 1439px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 56px;
+    }
 }
 
 .nav__link {
     font-size: 18px;
     line-height: 0.969;
     color: var(--textColor);
-
+    transition: color var(--time) var(--duration);
     &:hover,
     &:focus {
-        padding: 21px 28px;
-        border-radius: 87px;
-        background-color: var(--btnColor);
-        text-transform: uppercase;
+        color: var(--accentColor);
     }
+
 }
 
 .header__hero {
-    margin-top: 48px;
     @media screen and (min-width: $desktop) {
         margin-top: 73px;
     }
-
 }
 
 .hero__title {
